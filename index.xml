@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>吴振宇的博客</title>
-    <link>http://example.org/</link>
+    <link>yunnian.github.io/</link>
     <description>Recent content on 吴振宇的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Mar 2021 14:34:42 +0800</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Mar 2021 14:34:42 +0800</lastBuildDate><atom:link href="yunnian.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何解决goland查看go语言内核源码报错</title>
-      <link>http://example.org/posts/my-first-post/</link>
+      <link>yunnian.github.io/posts/my-first-post/</link>
       <pubDate>Sat, 20 Mar 2021 14:34:42 +0800</pubDate>
       
-      <guid>http://example.org/posts/my-first-post/</guid>
+      <guid>yunnian.github.io/posts/my-first-post/</guid>
       <description>当你想看go的内核代码之后，用goland打开工程至少会报个&amp;quot;Use of internal package is not allowed&amp;quot;的错误,如果你go path设置的不对 还会报函数的引用错误，这个问题困扰了我很久，我是用以下办法结局了问题
 方案一 1. goroot 中的sdk选择你当前源码目录编译的sdk 2. gopath 中project中加下你的源码目录，然后下方勾选  方案二 其实我也用了vscode编辑器,装了go的插件之后完全没有goland这种问题，使用他也是第二种比较好的方案</description>
     </item>
