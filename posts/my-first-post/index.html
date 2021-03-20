@@ -6,7 +6,8 @@
     
     <title>如何解决goland查看go语言内核源码报错 | 吴振宇的博客</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="当你想看go的内核代码之后，用goland打开工程至少会报个&quot;Use of internal package is not allowed&quot;的错误,如果你go path设置的不对 还会报函数的引用错误，这个问题困扰了我很久，我是用以下办法结局了问题
+    <meta name="description" content="当你想看go的内核代码之后，用goland打开工程至少会报个&quot;Use of internal package is not allowed&quot;的错误,如果你go path设置的不对 还会报函数的引用错误
+这个问题困扰了我很久，我是用以下办法结局了问题
 方案一 1. goroot 中的sdk选择你当前源码目录编译的sdk 2. gopath 中project中加下你的源码目录，然后下方勾选  方案二 其实我也用了vscode编辑器,装了go的插件之后完全没有goland这种问题，使用他也是第二种比较好的方案">
     <meta name="generator" content="Hugo 0.81.0" />
     
@@ -32,7 +33,8 @@
     
     
     <meta property="og:title" content="如何解决goland查看go语言内核源码报错" />
-<meta property="og:description" content="当你想看go的内核代码之后，用goland打开工程至少会报个&quot;Use of internal package is not allowed&quot;的错误,如果你go path设置的不对 还会报函数的引用错误，这个问题困扰了我很久，我是用以下办法结局了问题
+<meta property="og:description" content="当你想看go的内核代码之后，用goland打开工程至少会报个&quot;Use of internal package is not allowed&quot;的错误,如果你go path设置的不对 还会报函数的引用错误
+这个问题困扰了我很久，我是用以下办法结局了问题
 方案一 1. goroot 中的sdk选择你当前源码目录编译的sdk 2. gopath 中project中加下你的源码目录，然后下方勾选  方案二 其实我也用了vscode编辑器,装了go的插件之后完全没有goland这种问题，使用他也是第二种比较好的方案" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/my-first-post/" /><meta property="article:section" content="posts" />
@@ -40,13 +42,15 @@
 <meta property="article:modified_time" content="2021-03-20T14:34:42&#43;08:00" />
 
 <meta itemprop="name" content="如何解决goland查看go语言内核源码报错">
-<meta itemprop="description" content="当你想看go的内核代码之后，用goland打开工程至少会报个&quot;Use of internal package is not allowed&quot;的错误,如果你go path设置的不对 还会报函数的引用错误，这个问题困扰了我很久，我是用以下办法结局了问题
+<meta itemprop="description" content="当你想看go的内核代码之后，用goland打开工程至少会报个&quot;Use of internal package is not allowed&quot;的错误,如果你go path设置的不对 还会报函数的引用错误
+这个问题困扰了我很久，我是用以下办法结局了问题
 方案一 1. goroot 中的sdk选择你当前源码目录编译的sdk 2. gopath 中project中加下你的源码目录，然后下方勾选  方案二 其实我也用了vscode编辑器,装了go的插件之后完全没有goland这种问题，使用他也是第二种比较好的方案"><meta itemprop="datePublished" content="2021-03-20T14:34:42&#43;08:00" />
 <meta itemprop="dateModified" content="2021-03-20T14:34:42&#43;08:00" />
-<meta itemprop="wordCount" content="18">
+<meta itemprop="wordCount" content="19">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="如何解决goland查看go语言内核源码报错"/>
-<meta name="twitter:description" content="当你想看go的内核代码之后，用goland打开工程至少会报个&quot;Use of internal package is not allowed&quot;的错误,如果你go path设置的不对 还会报函数的引用错误，这个问题困扰了我很久，我是用以下办法结局了问题
+<meta name="twitter:description" content="当你想看go的内核代码之后，用goland打开工程至少会报个&quot;Use of internal package is not allowed&quot;的错误,如果你go path设置的不对 还会报函数的引用错误
+这个问题困扰了我很久，我是用以下办法结局了问题
 方案一 1. goroot 中的sdk选择你当前源码目录编译的sdk 2. gopath 中project中加下你的源码目录，然后下方勾选  方案二 其实我也用了vscode编辑器,装了go的插件之后完全没有goland这种问题，使用他也是第二种比较好的方案"/>
 
 	
@@ -143,7 +147,9 @@
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>当你想看go的内核代码之后，用goland打开工程至少会报个&quot;Use of internal package is not allowed&quot;的错误,如果你go path设置的不对 还会报函数的引用错误，这个问题困扰了我很久，我是用以下办法结局了问题</p>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>当你想看go的内核代码之后，用goland打开工程至少会报个&quot;Use of internal package is not allowed&quot;的错误,如果你go path设置的不对 还会报函数的引用错误</p>
+<p><img src="/internal.jpg" alt=""></p>
+<p>这个问题困扰了我很久，我是用以下办法结局了问题</p>
 <h1 id="方案一">方案一</h1>
 <h3 id="1--goroot-中的sdk选择你当前源码目录编译的sdk">1.  goroot 中的sdk选择你当前源码目录编译的sdk</h3>
 <p><img src="/gosdk.jpg" alt=""></p>
